@@ -17,7 +17,8 @@ const startServer = async () => {
   try {
     await app.listen(config.port);
     logger.info(`Web server listening to: ${config.port}`);
-    await connectToDatabase(config.db);
+    const db = await connectToDatabase(config.db);
+    await db.connect();
     logger.info('Successfully connected to all tenants');
   } catch (err) {
     logger.error('Something went wrong', err);

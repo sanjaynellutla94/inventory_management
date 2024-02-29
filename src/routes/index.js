@@ -16,19 +16,19 @@ const routes = [
   },
   {
     key: 'department',
-    url: urls.department.base,
+    url: urls.departments.base,
     isPublic: false,
     handlers: [authenticationHandler, departmentRouter],
   },
   {
     key: 'category',
-    url: urls.category.base,
+    url: urls.categories.base,
     isPublic: false,
     handlers: [authenticationHandler, categoryRouter],
   },
   {
     key: 'subCategory',
-    url: urls.subCategory.base,
+    url: urls.subCategories.base,
     isPublic: false,
     handlers: [authenticationHandler, subCategoryRouter],
   },

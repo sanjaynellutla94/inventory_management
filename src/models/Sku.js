@@ -10,6 +10,7 @@ module.exports = (instance, DataTypes) => {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
       },
       locationId: {
         type: DataTypes.INTEGER,
@@ -30,22 +31,17 @@ module.exports = (instance, DataTypes) => {
       // Considering the requirement, i am not creating a seperate entity for products,
       // instead adding fields in SKU table itself for assignment purpose
       productName: {
-        type: DataTypes.String,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       productColor: {
-        type: DataTypes.String,
+        type: DataTypes.STRING,
         allowNull: false,
       },
     },
     {
       timestamps: true,
       underscored: true,
-      uniqueKeys: {
-        unique_product: {
-          fields: ['productName', 'productColor'],
-        },
-      },
     },
   );
   return Sku;

@@ -39,25 +39,25 @@ module.exports = (config) => {
   });
 
   db.Sku.hasOne(db.Location, {
-    as: 'locationId',
+    as: 'location',
     foreignKey: 'locationId',
     attributes: ['id', 'name'],
   });
 
   db.Sku.hasOne(db.Department, {
-    as: 'departmentId',
+    as: 'department',
     foreignKey: 'departmentId',
     attributes: ['id', 'name'],
   });
 
   db.Sku.hasOne(db.Category, {
-    as: 'categoryId',
+    as: 'category',
     foreignKey: 'categoryId',
     attributes: ['id', 'name'],
   });
 
   db.Sku.hasOne(db.SubCategory, {
-    as: 'subCategoryId',
+    as: 'subCategory',
     foreignKey: 'subCategoryId',
     attributes: ['id', 'name'],
   });

@@ -2,3 +2,5 @@ node_modules
 migrations
 coverage
 tests
+.git
+mysql_data
