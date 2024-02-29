@@ -11,5 +11,4 @@ module.exports = withTryCatch((req, res, next) => {
   } else {
     throw new ApiError(errors.ACCESS_DENIED);
   }
-  // console.log(user, validRoles);
 });

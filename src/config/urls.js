@@ -18,7 +18,7 @@ module.exports = {
     bySubCategoryId: '/:id',
   },
   sku: {
-    base: '/sub-categories',
+    base: '/skus',
     byMetadata: '/metadata',
   },
 };

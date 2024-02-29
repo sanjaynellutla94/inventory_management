@@ -20,7 +20,11 @@ const getById = (id) => models.Category.findOne({
   where: { id },
 });
 
-const getByDepartmentId = (departmentId) => models.Category.findOne({
+const getByName = (name) => models.Category.findOne({
+  where: { name },
+});
+
+const getByDepartmentId = (departmentId) => models.Category.findAll({
   where: { departmentId },
 });
 
@@ -29,9 +33,11 @@ const getByLocationId = async (locationId) => {
     include: [
       {
         model: models.Department,
+        as: 'department',
         include: [
           {
             model: models.Location,
+            as: 'location',
             where: { id: locationId },
           },
         ],
@@ -69,6 +75,7 @@ const remove = async (id) => {
 module.exports = {
   create,
   getById,
+  getByName,
   getAll,
   update,
   remove,

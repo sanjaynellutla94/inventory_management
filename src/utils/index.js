@@ -53,13 +53,13 @@ module.exports = {
   },
   logError: (error, req = {}) => {
     const logPayload = {
-      ...(error || {}),
+      // ...(error || {}),
       requestId: req.id,
       userId: req.userId,
       clientId: req.clientId,
       userAgent: req.userAgent,
       statusCode: error?.statusCode || statusCodes.INTERNAL_SERVER_ERROR,
     };
-    logger.error(logPayload);
+    logger.error(logPayload, error);
   },
 };

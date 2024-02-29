@@ -1,0 +1,370 @@
+{
+  "data": [
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "Bakery Bread",
+      "SubCategory": "Bagels"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "Bakery Bread",
+      "SubCategory": "Baking or Breading Products"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "Bakery Bread",
+      "SubCategory": "English Muffins or Biscuits"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "Bakery Bread",
+      "SubCategory": "Flatbreads"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "In Store Bakery",
+      "SubCategory": "Breakfast Cake or Sweet Roll"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "In Store Bakery",
+      "SubCategory": "Cakes"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "In Store Bakery",
+      "SubCategory": "Pies"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Bakery",
+      "Category": "In Store Bakery",
+      "SubCategory": "Seasonal"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Cheese",
+      "SubCategory": "Cheese Sauce"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Cheese",
+      "SubCategory": "Specialty Cheese"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Cream or Creamer",
+      "SubCategory": "Dairy Alternative Creamer"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Cream or Creamer",
+      "SubCategory": "Whipping Creams"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Cultured",
+      "SubCategory": "Cottage Cheese"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Refrigerated Baking",
+      "SubCategory": "Refrigerated Breads"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Refrigerated Baking",
+      "SubCategory": "Refrigerated English Muffins and Biscuits"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Refrigerated Baking",
+      "SubCategory": "Refrigerated Hand Held Sweets"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Refrigerated Baking",
+      "SubCategory": "Refrigerated Pie Crust"
+    },
+    {
+      "Location": "Center",
+      "Department": "Dairy",
+      "Category": "Refrigerated Baking",
+      "SubCategory": "Refrigerated Sweet Breakfast Baked Goods"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Deli and Foodservice",
+      "Category": "Self Service Deli Cold",
+      "SubCategory": "Beverages"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Deli and Foodservice",
+      "Category": "Service Deli",
+      "SubCategory": "Cheese All Other"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Deli and Foodservice",
+      "Category": "Service Deli",
+      "SubCategory": "Cheese American"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Floral",
+      "Category": "Bouquets and Cut Flowers",
+      "SubCategory": "Bouquets and Cut Flowers"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Floral",
+      "Category": "Gifts",
+      "SubCategory": "Gifts"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Floral",
+      "Category": "Plants",
+      "SubCategory": "Plants"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Bake",
+      "SubCategory": "Bread or Dough Products Frozen"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Bake",
+      "SubCategory": "Breakfast Cake or Sweet Roll Frozen"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Breakfast",
+      "SubCategory": "Frozen Breakfast Entrees"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Breakfast",
+      "SubCategory": "Frozen Breakfast Sandwich"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Breakfast",
+      "SubCategory": "Frozen Egg Substitutes"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Breakfast",
+      "SubCategory": "Frozen Syrup Carriers"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Desserts or Fruit and Toppings",
+      "SubCategory": "Pies Frozen"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Juice",
+      "SubCategory": "Frozen Apple Juice"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Juice",
+      "SubCategory": "Frozen Fruit Drink Mixers"
+    },
+    {
+      "Location": "Center",
+      "Department": "Frozen",
+      "Category": "Frozen Juice",
+      "SubCategory": "Frozen Fruit Juice All Other"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Audio Video",
+      "SubCategory": "Audio"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Audio Video",
+      "SubCategory": "Video DVD"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Audio Video",
+      "SubCategory": "Video VHS"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Housewares",
+      "SubCategory": "Bedding"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Housewares",
+      "SubCategory": "Candles"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Housewares",
+      "SubCategory": "Collectibles and Gifts"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Housewares",
+      "SubCategory": "Flashlights"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Housewares",
+      "SubCategory": "Frames"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Insect and Rodent",
+      "SubCategory": "Indoor Repellants or Traps"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Insect and Rodent",
+      "SubCategory": "Outdoor Repellants or Traps"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Kitchen Accessories",
+      "SubCategory": "Kitchen Accessories"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Laundry",
+      "SubCategory": "Bleach Liquid"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Laundry",
+      "SubCategory": "Bleach Powder"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Laundry",
+      "SubCategory": "Fabric Softener Liquid"
+    },
+    {
+      "Location": "Center",
+      "Department": "GM",
+      "Category": "Laundry",
+      "SubCategory": "Fabric Softener Sheets"
+    },
+    {
+      "Location": "Center",
+      "Department": "Grocery",
+      "Category": "Baking Ingredients",
+      "SubCategory": "Dry or Canned Milk"
+    },
+    {
+      "Location": "Center",
+      "Department": "Grocery",
+      "Category": "Baking Ingredients",
+      "SubCategory": "Food Coloring"
+    },
+    {
+      "Location": "Center",
+      "Department": "Grocery",
+      "Category": "Spices",
+      "SubCategory": "Salt Cooking or Edible or Seasoned"
+    },
+    {
+      "Location": "Center",
+      "Department": "Grocery",
+      "Category": "Spices",
+      "SubCategory": "Salt Substitute"
+    },
+    {
+      "Location": "Center",
+      "Department": "Grocery",
+      "Category": "Spices",
+      "SubCategory": "Seasoning Dry"
+    },
+    {
+      "Location": "Center",
+      "Department": "Grocery",
+      "Category": "Stuffing Products",
+      "SubCategory": "Stuffing Products"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Seafood",
+      "Category": "Frozen Shellfish",
+      "SubCategory": "Frozen Shellfish"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Seafood",
+      "Category": "Other Seafood",
+      "SubCategory": "All Other Seafood"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Seafood",
+      "Category": "Other Seafood",
+      "SubCategory": "Prepared Seafood Entrees"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Seafood",
+      "Category": "Other Seafood",
+      "SubCategory": "Seafood Salads"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Seafood",
+      "Category": "Other Seafood",
+      "SubCategory": "Smoked Fish"
+    },
+    {
+      "Location": "Perimeter",
+      "Department": "Seafood",
+      "Category": "Other Seafood",
+      "SubCategory": "Seafood Breading Sauces Dips"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ const getByMetadata = async (req, res, next) => {
   const {
     locationName, departmentName, categoryName, subCategoryName,
   } = req.query;
-  if (locationName && departmentName && categoryName && subCategoryName) {
+  if (locationName || departmentName || categoryName || subCategoryName) {
     const skus = await skuService.getByMetadata({
       locationName, departmentName, categoryName, subCategoryName,
     });

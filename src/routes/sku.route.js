@@ -1,6 +1,6 @@
 const { getRouter } = require('../libraries/appBuilder');
 const urls = require('../config/urls');
-const skuCalidationSchema = require('../validations/sku');
+const skuValidationSchema = require('../validations/sku'); // Corrected variable name
 const { requestValidationHandler } = require('../middlewares');
 const { withTryCatch, withValidationSchema } = require('../wrappers');
 const skuController = require('../controllers/sku.controller');
@@ -13,7 +13,7 @@ router.route('/')
   .post(
     withValidationSchema(
       requestValidationHandler,
-      skuCalidationSchema.create,
+      skuValidationSchema.create, // Corrected variable name
     ),
     withTryCatch(skuController.create),
   );

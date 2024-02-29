@@ -4,71 +4,88 @@ const Department = require('./Department');
 const Category = require('./Category');
 const SubCategory = require('./SubCategory');
 const Sku = require('./Sku');
+const config = require('../config/config');
 
-module.exports = (config) => {
-  const db = {};
+const db = {};
 
-  const dbInstance = dbBuilder.getDBInstance(config);
+const dbInstance = dbBuilder.getDBInstance(config.db);
 
-  db.Location = Location(dbInstance, dbBuilder.getDataTypes());
+db.Location = Location(dbInstance, dbBuilder.getDataTypes());
 
-  db.Department = Department(dbInstance, dbBuilder.getDataTypes());
+db.Department = Department(dbInstance, dbBuilder.getDataTypes());
 
-  db.Category = Category(dbInstance, dbBuilder.getDataTypes());
+db.Category = Category(dbInstance, dbBuilder.getDataTypes());
 
-  db.SubCategory = SubCategory(dbInstance, dbBuilder.getDataTypes());
+db.SubCategory = SubCategory(dbInstance, dbBuilder.getDataTypes());
 
-  db.Sku = Sku(dbInstance, dbBuilder.getDataTypes());
+db.Sku = Sku(dbInstance, dbBuilder.getDataTypes());
 
-  db.Location.hasMany(db.Department, {
-    foreignKey: 'departmentId',
-    as: 'departments',
-    attributes: ['id'],
-  });
+db.Location.hasMany(db.Department, {
+  foreignKey: 'departmentId',
+  as: 'departments',
+  attributes: ['id'],
+  onDelete: 'CASCADE',
+});
 
-  db.Department.hasMany(db.Category, {
-    foreignKey: 'categoryId',
-    as: 'categories',
-    attributes: ['id'],
-  });
+db.Department.belongsTo(db.Location, {
+  as: 'location',
+  attributes: ['id'],
+});
 
-  db.Category.hasMany(db.SubCategory, {
-    foreignKey: 'subCategoryId',
-    as: 'subCategories',
-    attributes: ['id'],
-  });
+db.Department.hasMany(db.Category, {
+  foreignKey: 'categoryId',
+  as: 'categories',
+  attributes: ['id'],
+  onDelete: 'CASCADE',
+});
 
-  db.Sku.hasOne(db.Location, {
-    as: 'location',
-    foreignKey: 'locationId',
-    attributes: ['id', 'name'],
-  });
+db.Category.belongsTo(db.Department, {
+  as: 'department',
+  attributes: ['id'],
+});
 
-  db.Sku.hasOne(db.Department, {
-    as: 'department',
-    foreignKey: 'departmentId',
-    attributes: ['id', 'name'],
-  });
+db.Category.hasMany(db.SubCategory, {
+  foreignKey: 'subCategoryId',
+  as: 'subCategories',
+  attributes: ['id'],
+  onDelete: 'CASCADE',
+});
 
-  db.Sku.hasOne(db.Category, {
-    as: 'category',
-    foreignKey: 'categoryId',
-    attributes: ['id', 'name'],
-  });
+db.SubCategory.belongsTo(db.Category, {
+  as: 'category',
+  attributes: ['id'],
+});
 
-  db.Sku.hasOne(db.SubCategory, {
-    as: 'subCategory',
-    foreignKey: 'subCategoryId',
-    attributes: ['id', 'name'],
-  });
+db.Sku.belongsTo(db.Location, {
+  as: 'location',
+  foreignKey: 'locationId',
+  attributes: ['id', 'name'],
+});
 
-  dbBuilder.sync(dbInstance);
+db.Sku.belongsTo(db.Department, {
+  as: 'department',
+  foreignKey: 'departmentId',
+  attributes: ['id', 'name'],
+});
 
-  db.instance = dbInstance;
+db.Sku.belongsTo(db.Category, {
+  as: 'category',
+  foreignKey: 'categoryId',
+  attributes: ['id', 'name'],
+});
 
-  db.connect = () => dbBuilder.connect(dbInstance);
+db.Sku.belongsTo(db.SubCategory, {
+  as: 'subCategory',
+  foreignKey: 'subCategoryId',
+  attributes: ['id', 'name'],
+});
 
-  db.Op = dbBuilder.getOperators();
+dbBuilder.sync(dbInstance);
 
-  return db;
-};
+db.instance = dbInstance;
+
+db.connect = () => dbBuilder.connect(dbInstance);
+
+db.Op = dbBuilder.getOperators();
+
+module.exports = db;

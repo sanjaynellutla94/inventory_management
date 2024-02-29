@@ -7,5 +7,6 @@ module.exports = {
   },
   update: {
     id: Joi.number(),
+    name: Joi.string(),
   },
 };

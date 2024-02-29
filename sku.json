@@ -1,0 +1,146 @@
+[
+  {
+    "SKU": 1,
+    "NAME": "SKUDESC1",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Bakery",
+    "CATEGORY": "Bakery Bread",
+    "SUBCATEGORY": "Bagels"
+  },
+  {
+    "SKU": 2,
+    "NAME": "SKUDESC2",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Deli and Foodservice",
+    "CATEGORY": "Self Service Deli Cold",
+    "SUBCATEGORY": "Beverages"
+  },
+  {
+    "SKU": 3,
+    "NAME": "SKUDESC3",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Floral",
+    "CATEGORY": "Bouquets and Cut Flowers",
+    "SUBCATEGORY": "Bouquets and Cut Flowers"
+  },
+  {
+    "SKU": 4,
+    "NAME": "SKUDESC4",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Deli and Foodservice",
+    "CATEGORY": "Service Deli",
+    "SUBCATEGORY": "Cheese All Other"
+  },
+  {
+    "SKU": 5,
+    "NAME": "SKUDESC5",
+    "LOCATION": "Center",
+    "DEPARTMENT": "Frozen",
+    "CATEGORY": "Frozen Bake",
+    "SUBCATEGORY": "Bread or Dough Products Frozen"
+  },
+  {
+    "SKU": 6,
+    "NAME": "SKUDESC6",
+    "LOCATION": "Center",
+    "DEPARTMENT": "Grocery",
+    "CATEGORY": "Crackers",
+    "SUBCATEGORY": "Rice Cakes"
+  },
+  {
+    "SKU": 7,
+    "NAME": "SKUDESC7",
+    "LOCATION": "Center",
+    "DEPARTMENT": "GM",
+    "CATEGORY": "Audio Video",
+    "SUBCATEGORY": "Audio"
+  },
+  {
+    "SKU": 8,
+    "NAME": "SKUDESC8",
+    "LOCATION": "Center",
+    "DEPARTMENT": "GM",
+    "CATEGORY": "Audio Video",
+    "SUBCATEGORY": "Video DVD"
+  },
+  {
+    "SKU": 9,
+    "NAME": "SKUDESC9",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "GM",
+    "CATEGORY": "Housewares",
+    "SUBCATEGORY": "Beeding"
+  },
+  {
+    "SKU": 10,
+    "NAME": "SKUDESC10",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Seafood",
+    "CATEGORY": "Frozen Shellfish",
+    "SUBCATEGORY": "Frozen Shellfish"
+  },
+  {
+    "SKU": 11,
+    "NAME": "SKUDESC11",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Seafood",
+    "CATEGORY": "Other Seafood",
+    "SUBCATEGORY": "All Other Seafood"
+  },
+  {
+    "SKU": 12,
+    "NAME": "SKUDESC12",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Seafood",
+    "CATEGORY": "Other Seafood",
+    "SUBCATEGORY": "Prepared Seafood Entrees"
+  },
+  {
+    "SKU": 13,
+    "NAME": "SKUDESC13",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Seafood",
+    "CATEGORY": "Other Seafood",
+    "SUBCATEGORY": "Salads"
+  },
+  {
+    "SKU": 14,
+    "NAME": "SKUDESC14",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Bakery",
+    "CATEGORY": "Bakery Bread",
+    "SUBCATEGORY": "Bagels"
+  },
+  {
+    "SKU": 15,
+    "NAME": "SKUDESC15",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Deli and Foodservice",
+    "CATEGORY": "Self Service Deli Cold",
+    "SUBCATEGORY": "Beverages"
+  },
+  {
+    "SKU": 16,
+    "NAME": "SKUDESC16",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Floral",
+    "CATEGORY": "Bouquets and Cut Flowers",
+    "SUBCATEGORY": "Bouquets and Cut Flowers"
+  },
+  {
+    "SKU": 17,
+    "NAME": "SKUDESC17",
+    "LOCATION": "Perimeter",
+    "DEPARTMENT": "Deli and Foodservice",
+    "CATEGORY": "Service Deli",
+    "SUBCATEGORY": "Cheese All Other"
+  },
+  {
+    "SKU": 18,
+    "NAME": "SKUDESC18",
+    "LOCATION": "Center",
+    "DEPARTMENT": "Frozen",
+    "CATEGORY": "Frozen Bake",
+    "SUBCATEGORY": "Bread or Dough Products Frozen"
+  }
+]

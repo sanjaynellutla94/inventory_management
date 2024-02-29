@@ -20,6 +20,10 @@ const getById = (id) => models.Department.findOne({
   where: { id },
 });
 
+const getByName = (name) => models.Department.findOne({
+  where: { name },
+});
+
 const getByLocationId = (locationId) => models.Department.findOne({
   where: { locationId },
 });
@@ -52,6 +56,7 @@ const remove = async (id) => {
 module.exports = {
   create,
   getById,
+  getByName,
   getAll,
   update,
   remove,

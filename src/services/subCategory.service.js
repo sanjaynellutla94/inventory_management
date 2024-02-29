@@ -12,6 +12,10 @@ const getById = (id) => models.SubCategory.findOne({
   where: { id },
 });
 
+const getByName = (id) => models.SubCategory.findOne({
+  where: { id },
+});
+
 const getByCategoryId = (categoryId) => models.SubCategory.findOne({
   where: { categoryId },
 });
@@ -21,8 +25,10 @@ const getByDepartmentId = async (locationId) => {
     include: [
       {
         model: models.Category,
+        as: 'category',
         include: [
           {
+            as: 'department',
             model: models.Department,
             where: { id: locationId },
           },
@@ -34,15 +40,18 @@ const getByDepartmentId = async (locationId) => {
 };
 
 const getByLocationId = async (locationId) => {
-  const subcategories = await models.Subcategory.findAll({
+  const subcategories = await models.SubCategory.findAll({
     include: [
       {
         model: models.Category,
+        as: 'category',
         include: [
           {
+            as: 'department',
             model: models.Department,
             include: [
               {
+                as: 'location',
                 model: models.Location,
                 where: { id: locationId },
               },
@@ -83,6 +92,7 @@ const remove = async (id) => {
 module.exports = {
   create,
   getById,
+  getByName,
   getAll,
   update,
   remove,

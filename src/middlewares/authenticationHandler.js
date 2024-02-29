@@ -5,15 +5,16 @@ const { withTryCatch } = require('../wrappers');
 const validateSecretKey = () => true;
 
 module.exports = withTryCatch((req, res, next) => {
-  const secret = req.headers.authorization;
-  if (secret) {
-    const isResolved = validateSecretKey(secret);
-    if (isResolved) {
-      next();
-    } else {
-      throw new ApiError(errors.ACCESS_DENIED);
-    }
-  } else {
-    throw new ApiError(errors.UNAUTHORIZED_ACCESS);
-  }
+  next();
+  // const secret = req.headers.authorization;
+  // if (secret) {
+  //   const isResolved = validateSecretKey(secret);
+  //   if (isResolved) {
+  //     next();
+  //   } else {
+  //     throw new ApiError(errors.ACCESS_DENIED);
+  //   }
+  // } else {
+  //   throw new ApiError(errors.UNAUTHORIZED_ACCESS);
+  // }
 });

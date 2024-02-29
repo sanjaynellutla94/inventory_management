@@ -6,18 +6,25 @@ const create = async (payload) => {
   return location.dataValues;
 };
 
-const getAll = () => models.Location.findAll({
-  include: [
-    {
-      model: models.Department,
-      as: 'departmnets',
-      attributes: ['id', 'name'],
-    },
-  ],
-});
+const getAll = async () => {
+  const locations = await models.Location.findAll({
+    include: [
+      {
+        model: models.Department,
+        as: 'departments',
+        attributes: ['id', 'name'],
+      },
+    ],
+  });
+  return locations;
+};
 
 const getById = (id) => models.Location.findOne({
   where: { id },
+});
+
+const getByName = (name) => models.Location.findOne({
+  where: { name },
 });
 
 const update = async (data) => {
@@ -48,6 +55,7 @@ const remove = async (id) => {
 module.exports = {
   create,
   getById,
+  getByName,
   getAll,
   update,
   remove,

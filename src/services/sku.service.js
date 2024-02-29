@@ -1,53 +1,6 @@
 const models = require('../models');
 
-const { Op } = models;
-
 const getSkuKey = (payload) => `sku-${payload.locationId}-${payload.departmentId}-${payload.categoryId}-${payload.subCategoryId}-${payload.productName}-${payload.productColor}`;
-
-// const createWithSubCategory = async ({ id }) => {
-//   const subCategory = await models.SubCategory.findOne({
-//     where: { id },
-//     include: [
-//       {
-//         model: models.Category,
-//         as: 'category',
-//         attributes: ['id', 'department'],
-//         include: [
-//           {
-//             model: models.Department,
-//             as: 'department',
-//             attributes: ['id', 'location'],
-//             include: [
-//               {
-//                 model: models.Location,
-//                 as: 'location',
-//                 attributes: ['id'],
-//               },
-//             ],
-//           },
-//         ],
-//       },
-//     ],
-//   });
-//   if (!subCategory) {
-//     return null;
-//   }
-//   const { category } = subCategory || {};
-//   const { department } = category || {};
-//   const { location } = department || {};
-//   // const locationId =
-//   const sku = await models.Sku.create({
-//     name: getSkuKey({
-//       subCategory, category, department, location,
-//     }),
-//     locationId: location.id,
-//     departmentId: department.id,
-//     categoryId: category.id,
-//     subCategoryId: subCategory.id,
-//   });
-//   if (!sku || !sku.id) return null;
-//   return sku.dataValues;
-// };
 
 const create = async (payload) => {
   const sku = await models.Sku.create({
@@ -70,47 +23,41 @@ const getByName = (id) => models.Sku.findOne({
 
 const getByMetadata = ({
   locationName, departmentName, categoryName, subCategoryName,
-}) => models.Sku.find({
+}) => models.Sku.findAll({
   include: [
     {
       model: models.Location,
-      as: 'locationId',
-      attributes: ['id'],
-      where: { name: locationName },
+      as: 'location',
+      attributes: ['id', 'name'],
+      where: locationName && {
+        name: locationName,
+      },
     },
     {
       model: models.Department,
-      as: 'departmentId',
-      attributes: ['id'],
-      where: { name: departmentName },
+      as: 'department',
+      attributes: ['id', 'name'],
+      where: departmentName && {
+        name: departmentName,
+      },
     },
     {
       model: models.Category,
-      as: 'categoryId',
-      attributes: ['id'],
-      where: { name: categoryName },
+      as: 'category',
+      attributes: ['id', 'name'],
+      where: categoryName && {
+        name: categoryName,
+      },
     },
     {
       model: models.SubCategory,
-      as: 'subCategoryId',
-      attributes: ['id'],
-      where: { name: subCategoryName },
+      as: 'subCategory',
+      attributes: ['id', 'name'],
+      where: subCategoryName && {
+        name: subCategoryName,
+      },
     },
   ],
-  where: {
-    locationId: {
-      [Op.not]: null,
-    },
-    departmentId: {
-      [Op.not]: null,
-    },
-    categoryId: {
-      [Op.not]: null,
-    },
-    subCategoryId: {
-      [Op.not]: null,
-    },
-  },
 });
 
 const update = async (data) => {
@@ -146,5 +93,4 @@ module.exports = {
   remove,
   getByName,
   getByMetadata,
-  // createWithSubCategory,
 };

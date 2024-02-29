@@ -1,6 +1,6 @@
 module.exports = (instance, DataTypes) => {
   const SubCategory = instance.define(
-    'sub_catogories',
+    'sub_categories',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -10,6 +10,7 @@ module.exports = (instance, DataTypes) => {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
       },
       categoryId: {
         type: DataTypes.INTEGER,
