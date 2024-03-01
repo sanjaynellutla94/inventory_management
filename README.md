@@ -55,3 +55,20 @@ DEBUG_PORT=9239
 ```
 > docker-compose up (docker-compose takes care of data load from ./meta-data.json and sku.json)
 ```
+
+### Starting the application using docker
+```
+> npm run docker:build
+```
+Or
+```
+> docker build -t inventory_management .
+```
+
+```
+> npm run docker:run(app will run on Port:8000)
+```
+Or
+```
+> docker run -p 8000:8000 inventory_management
+```
