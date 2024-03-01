@@ -58,18 +58,16 @@ DEBUG_PORT=9239
 
 ### Starting the application using docker
 ```
-> npm run docker:build
+> npm run docker:build (Automated npm script for below command)
 ```
-Or
 ```
 > docker build -t inventory_management .
 ```
 
 
 ```
-> npm run docker:run(app will run on Port:8000)
+> npm run docker:run(app will run on Port:8000)(Automated npm script for below command)
 ```
-Or
 ```
 > docker run -p 8000:8000 inventory_management
 ```
