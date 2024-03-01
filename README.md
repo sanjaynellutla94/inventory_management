@@ -1,11 +1,20 @@
-### Project Description
+# Project Description
 
-Considering assignment document and the raw data provided in that, i have designed the Data models and built CRUD API's arround it and with a API requested to fetch sku data based on (locationName, departmentName, categoryName, subCategoryName) as parameters.
+This project involves designing data models and building CRUD APIs based on the assignment document and raw data provided. Additionally, an API has been implemented to fetch SKU data using parameters such as `locationName`, `departmentName`, `categoryName`, and `subCategoryName`.
 
-Tasks:
-1 - Pre load the data provided with logical data model Design(models and seeders folder)
-2 - Create CRUD APIs arround the models designed(Please refer src/config/urls.js)
-3 - API to fetch sku data based on (locationName, departmentName, categoryName, subCategoryName) as parameters(/api/v1/skus/metadata)
+### Tasks
+
+1. **Pre-load Data:**
+   - Logical data model design is implemented and can be found in the `models` and `seeders` folders.
+
+2. **CRUD APIs:**
+   - CRUD APIs have been developed around the designed models. For reference, please check `src/config/urls.js`.
+
+3. **SKU Metadata API:**
+   - An API is provided to fetch SKU data based on parameters (`locationName`, `departmentName`, `categoryName`, `subCategoryName`). The endpoint is `/api/v1/skus/metadata`.
+
+#### Note:
+This project doesnt have unit/integration test cases written, and setup is mostly for development environments, i have not provided setup for production.
 
 ### Environment Config Setup
 
