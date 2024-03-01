@@ -65,6 +65,7 @@ Or
 > docker build -t inventory_management .
 ```
 
+
 ```
 > npm run docker:run(app will run on Port:8000)
 ```
