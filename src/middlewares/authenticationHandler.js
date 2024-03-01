@@ -1,8 +1,8 @@
-const { ApiError, errors } = require('../errors');
+// const { ApiError, errors } = require('../errors');
 const { withTryCatch } = require('../wrappers');
 
 // Logic to validated generated secret keys or auth keys
-const validateSecretKey = () => true;
+// const validateSecretKey = () => true;
 
 module.exports = withTryCatch((req, res, next) => {
   next();
