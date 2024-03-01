@@ -14,7 +14,8 @@ This project involves designing data models and building CRUD APIs based on the 
    - An API is provided to fetch SKU data based on parameters (`locationName`, `departmentName`, `categoryName`, `subCategoryName`). The endpoint is `/api/v1/skus/metadata`.
 
 #### Note:
-This project doesnt have unit/integration test cases written, and setup is mostly for development environments, i have not provided setup for production.
+- This project doesnt have unit/integration test cases written, and setup is mostly for development environments, i have not provided setup for production.
+- Implemented `withTryCatch` wrapper, i have used it at route level controller handler so that we can avoid writing try catch all over controllers and services, if we need any controller specific try-catch we can change logic for that route. for reference(https://medium.com/fissionlabs/modular-and-secure-error-handling-in-express-js-63d00679e857)
 
 ### Environment Config Setup
 
